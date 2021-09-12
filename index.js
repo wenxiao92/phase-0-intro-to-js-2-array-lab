@@ -1,25 +1,26 @@
 // Write your solution here!
 const cats = ['Milo', 'Otis', 'Garfield'];
 
-function destructivelyAppendCat(Ralph) {
-    return cats.push(Ralph);
+function destructivelyAppendCat(anyCat) { //adds anyCat to the end of the array of cats
+    return cats.push(anyCat);
 }
 
-function destructivelyPrependCat(Bob) {
+function destructivelyPrependCat(Bob) { //adds the cat Bob to the beginning of the array
     return cats.unshift(Bob);
 }
 
-function destructivelyRemoveLastCat(Garfield){
+function destructivelyRemoveLastCat(){ //removes a cat from the array from the end of the array. Does not require a parameter
     return cats.pop();
 }
 
-function destructivelyRemoveFirstCat(Milo) {
+function destructivelyRemoveFirstCat() { //removes a cat from the array from the beginning of the array. Does not require a parameter
     return cats.shift();
 }
 
+
 function appendCat(Broom) {
-    var newArray = cats.slice();
-    newArray.push(Broom)
+    var newArray = cats.slice(); //Takes the old array and assign it to the new array called newArray
+    newArray.push(Broom) //Pushes the cat 'Broom; to the end of the new array
     return newArray;
 }
 
